@@ -1,5 +1,3 @@
-'use strict';
-
 const prevBtn = document.querySelector('.toggles__toggle--prev');
 const nextBtn = document.querySelector('.toggles__toggle--next');
 const activeArticle = document.querySelector('.page--active');

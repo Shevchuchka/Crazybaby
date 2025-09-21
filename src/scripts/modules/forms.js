@@ -30,10 +30,10 @@ function isValidText(text) {
   return true;
 }
 
-function isValidEmail(email) {
+function isValidEmail(mail) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  return regex.test(email);
+  return regex.test(mail);
 }
 
 /** checkElements */
