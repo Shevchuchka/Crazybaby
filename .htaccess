@@ -1,6 +1,0 @@
-<IfModule mod_headers.c>
-  # CSS, JS, картинки, шрифти – кешуємо на 1 рік
-  <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp|ico|woff2?)$">
-    Header set Cache-Control "max-age=31536000"
-  </FilesMatch>
-</IfModule>
