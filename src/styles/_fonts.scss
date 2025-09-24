@@ -1,23 +1,27 @@
 @font-face {
   font-family: 'Helvetica Neue Light';
   src: url('/public/fonts/helvetica-neue-light.otf') format('opentype');
+  font-display: optional;
   // font-display: swap;
 }
 
 @font-face {
   font-family: 'Helvetica Neue Regular';
   src: url('/public/fonts/helvetica-neue-regular.ttf') format('truetype');
+  font-display: optional;
   // font-display: swap;
 }
 
 @font-face {
   font-family: 'Helvetica Neue Medium';
   src: url('/public/fonts/helvetica-neue-medium.otf') format('opentype');
+  font-display: optional;
   // font-display: swap;
 }
 
 @font-face {
   font-family: 'DIN Pro Regular';
   src: url('/public/fonts/dinpro-regular.otf') format('opentype');
+  font-display: optional;
   // font-display: swap;
 }
