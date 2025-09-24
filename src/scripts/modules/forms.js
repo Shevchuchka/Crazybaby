@@ -1,25 +1,25 @@
-const form = document.querySelector('.questions__forms');
-const emailForm = document.querySelector('.form--email');
-const emailInput = document.querySelector('.input--email');
-const messageForm = document.querySelector('.form--message');
-const messageInput = document.querySelector('.input--message');
-const sendBtn = document.querySelector('.button--send');
+const form = document.querySelector(".questions__forms");
+const emailForm = document.querySelector(".form--email");
+const emailInput = document.querySelector(".input--email");
+const messageForm = document.querySelector(".form--message");
+const messageInput = document.querySelector(".input--message");
+const sendBtn = document.querySelector(".button--send");
 
 const email = {
   form: emailForm,
   input: emailInput,
-  formType: 'email',
+  formType: "email",
 };
 
 const message = {
   form: messageForm,
   input: messageInput,
-  formType: 'text',
+  formType: "text",
 };
 
-const selected = 'selected';
-const error = 'error';
-const disabled = 'disabled';
+const selected = "selected";
+const error = "error";
+const disabled = "disabled";
 
 /** validation */
 function isValidText(text) {
@@ -38,7 +38,7 @@ function isValidEmail(mail) {
 
 /** checkElements */
 function checkErrors(content, formType) {
-  if (formType === 'email' && !isValidEmail(content)) {
+  if (formType === "email" && !isValidEmail(content)) {
     return false;
   }
 
@@ -51,8 +51,8 @@ function checkErrors(content, formType) {
 
 function checkSelectedForm(formName) {
   if (
-    formName.form.classList.contains(selected)
-    && !formName.input.hasAttribute('value')
+    formName.form.classList.contains(selected) &&
+    !formName.input.hasAttribute("value")
   ) {
     formName.form.classList.remove(selected);
   }
@@ -61,16 +61,16 @@ function checkSelectedForm(formName) {
 /** onEvents */
 function onSubmit(...inputs) {
   inputs.forEach((input) => {
-    input.value = '';
+    input.value = "";
   });
 
-  sendBtn.setAttribute(disabled, '');
+  sendBtn.setAttribute(disabled, "");
 
   // window.scrollTo(0, 0);
 }
 
 function onInput(formName, content) {
-  formName.input.removeAttribute('value');
+  formName.input.removeAttribute("value");
 
   if (!checkErrors(content, formName.formType)) {
     formName.form.classList.add(error);
@@ -93,14 +93,14 @@ function onFocus(formToSelect, formToCheck) {
 /** setSendBtnState */
 function setBtnState() {
   if (
-    !emailForm.classList.contains(error)
-    && !messageForm.classList.contains(error)
-    && emailInput.value !== ''
-    && messageInput.value !== ''
+    !emailForm.classList.contains(error) &&
+    !messageForm.classList.contains(error) &&
+    emailInput.value !== "" &&
+    messageInput.value !== ""
   ) {
     sendBtn.removeAttribute(disabled);
   } else {
-    sendBtn.setAttribute(disabled, '');
+    sendBtn.setAttribute(disabled, "");
   }
 }
 
@@ -120,6 +120,10 @@ module.exports = {
   },
 
   functions: {
-    onBlur, onFocus, onInput, onSubmit, resetErrors,
+    onBlur,
+    onFocus,
+    onInput,
+    onSubmit,
+    resetErrors,
   },
 };
