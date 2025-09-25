@@ -9,40 +9,30 @@
     />
     <title>Crazybaby</title>
     <link rel="icon" href="../public/images/icons/favicon-web.webp" />
-    <!-- <link rel="stylesheet" href="./styles/main.scss" /> -->
-    <link
-      rel="preload"
-      href="./styles/main.scss"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
+    <link rel="stylesheet" href="./styles/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> -->
     <link
-      rel="preload"
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body class="page__body">
     <header class="header" id="home">
       <div class="header__top">
-        <a href="#" class="header__logo" aria-label="Logo to home">
+        <a
+          href="#"
+          class="header__logo"
+          aria-label="Logo to home"
+        >
           <img
             src="../public/images/logo.svg"
             alt="crazybabylogo"
@@ -148,7 +138,11 @@
 
     <aside class="page__menu menu" id="menu">
       <div class="menu__top">
-        <a href="#home" class="menu__logo" aria-label="logo-close menu">
+        <a
+          href="#home"
+          class="menu__logo"
+          aria-label="logo-close menu"
+        >
           <img
             src="../public/images/logo.svg"
             alt="crazybabylogo"
@@ -156,7 +150,11 @@
           />
         </a>
 
-        <a href="#home" class="icon icon--close" aria-label="close">
+        <a
+          href="#home"
+          class="icon icon--close"
+          aria-label="close"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -216,9 +214,14 @@
         </nav>
 
         <div class="menu__additional additional additional--menu">
-          <a href="#" class="menu__specs specs" data-i18n="specs.specs">
+          <a
+            href="#"
+            class="menu__specs specs"
+            data-i18n="specs.specs"
+          >
             specs
           </a>
+
 
           <div class="menu__language-toggle language-toggle">
             <button
@@ -771,7 +774,7 @@
 
             <div class="features__toggles toggles">
               <div class="toggles__container">
-                <button class="toggles__toggle button toggles__toggle--prev">
+                <button class="toggles__toggle button toggles__toggle--prev" aria-label="Previous feature">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
@@ -789,7 +792,7 @@
                     />
                   </svg>
                 </button>
-                <button class="toggles__toggle button toggles__toggle--next">
+                <button class="toggles__toggle button toggles__toggle--next" aria-label="Next feature">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
@@ -1001,7 +1004,11 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <a href="#home" class="footer__logo" aria-label="logo">
+        <a
+          href="#home"
+          class="footer__logo"
+          aria-label="logo"
+        >
           <img
             src="../public/images/logo.svg"
             alt="crazybabylogo"
@@ -1010,7 +1017,11 @@
         </a>
 
         <div class="footer__to-top to-top">
-          <a href="#home" class="icon icon--to-top" aria-label="To top">
+          <a
+            href="#home"
+            class="icon icon--to-top"
+            aria-label="To top"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -1096,10 +1107,7 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      defer
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="scripts/main.js"></script>
   </body>
 </html>

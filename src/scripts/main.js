@@ -1,6 +1,4 @@
-/* eslint-disable no-undef */
-/* eslint-disable max-len */
-/* eslint-disable no-new */
+"use strict";
 
 const {
   toggleLangFunc,
