@@ -9,10 +9,11 @@
     />
     <title>Crazybaby</title>
     <link rel="icon" href="../public/images/icons/favicon-web.webp" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="./styles/main.scss"
-    />
+    /> -->
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -23,10 +24,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
   </head>
   <body class="page__body">
     <header class="header" id="home">
