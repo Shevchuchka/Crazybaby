@@ -20,6 +20,8 @@
   }
 
   &__logo {
+    width: 161px;
+    height: 26px;
     flex: 1;
 
     @include on-desktop {
@@ -90,6 +92,7 @@
   &__mainPicture {
     display: block;
     width: 100%;
+    height: auto;
     object-fit: cover;
   }
 
